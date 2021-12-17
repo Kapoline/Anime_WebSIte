@@ -1,0 +1,165 @@
+body{
+    margin: 0;
+}
+
+.header{
+    background: url(pics/top_bg.png) no-repeat center top/cover; 
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    margin-left: 55px;
+}
+
+ul li{
+    display: block;
+}
+
+.menu li {
+    
+    margin-left: 41.5px;
+    text-decoration: none;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Montserrat;
+    font-style: normal;
+    font-size: 19.5px;
+}
+
+.menu li a:hover{
+    color:#dd5202;
+}
+
+
+.top_search{
+
+    
+    margin-left: auto;
+    margin-right: 69px;
+
+    padding-left: 15px;
+    padding-right: 35px;
+
+    width: 284px;
+    height: 30px;
+    
+
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    border-radius: 30px;
+
+    border: none;
+    outline: 0;
+
+    
+    background-repeat:no-repeat;
+    background-attachment:scroll;
+    background-position:303px center;
+    
+    background-image:url('pics/search_ico.jpg')
+}
+
+
+
+.top_search :focus{
+    outline: 0;
+}
+
+.login_main{
+    display: flex;
+    margin-top: 124px;
+    margin-left: 93px;
+}
+
+.enter_to_account{
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    
+    margin-bottom: 19px;
+
+    color: transparent;    
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-image: linear-gradient(135deg, #0F0F0F, #818181);
+}
+
+.log_fields{
+    margin-left: 5px;
+
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.log_fields input{
+    width: 403px;
+    height: 47px;
+    margin-bottom: 13px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+
+    padding-left: 21px;
+    padding-right: 21px;
+
+    border: 1px solid #6A6A6A;
+    box-sizing: border-box;
+    border-radius: 82px;
+}
+
+.btns{
+    margin-left: 27px;
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: 16px;
+    
+    
+}
+
+.btns button{
+    display: flex;
+    
+    justify-content: flex-start;
+
+    margin-bottom: 8px;
+
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 26px;
+    color:#292929;
+
+    outline: none;
+    border: 0;
+    background: transparent;
+}
+
+.btns button:hover{
+    cursor:pointer;
+    color:#6a6a6a;
+   
+}
+
+
+
+
+
+
+
+
+
+
