@@ -1,0 +1,31 @@
+﻿@model AnimeWebSite.Models.Autithication
+
+<!DOCTYPE html>
+<html>
+   <head>
+       <link href="~/css/Styles.css" rel="stylesheet" type="text/css"/>
+       <meta charset="UTF-8">
+       <title>ClownS</title>
+       <link rel="shortcut icon" href="">
+   </head>
+
+<body>
+<section class="login_main">
+    <div class="container">
+        <form  asp-action="LogIn" asp-controller="Auth" asp-antiforgery="true">
+            <div class="page_for_enter">
+                <div class="enter_to_account">Войти в аккаунт</div>
+                <div class="validation" asp-validation-summary="ModelOnly"></div>
+                <div class="log_fields">
+                    <input class="login_field" type="text" placeholder="Логин" asp-for="Email">
+                    <input class="password_field" type="password" placeholder="Пароль" asp-for="Password">
+                </div>
+                <div class="btns">
+                    <button type="submit" class="enter">Войти</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+</body>
+</html>
