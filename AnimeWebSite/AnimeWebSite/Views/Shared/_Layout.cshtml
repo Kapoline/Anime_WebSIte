@@ -1,0 +1,31 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="@Url.Content("~/css/Styles.css")"/>
+    <meta charset="UTF-8">
+    <title>AnimeWebSite</title>
+    <link rel="shortcut icon" href="pics/favicon.png">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="nav">
+            <ul class="menu">
+                <li><a href="/">Главная</a></li>
+                <li><a asp-controller="Account" asp-action="UserProfile">Профиль</a></li>
+                <li><a href="/animeitem/addanimeitem">Добавить</a></li>
+                <li><a asp-controller="Auth" asp-action="Login">Войти</a></li>
+                <li><a asp-controller="Auth" asp-action="Auth">Зарегистрироваться</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+@RenderBody()
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+@* <script src="~/js/site.js" asp-append-version="true"></script> *@
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

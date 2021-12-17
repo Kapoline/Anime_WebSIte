@@ -1,0 +1,67 @@
+@page
+@model AnimeWebSite.Views.Account.EditProfile
+
+@{
+    Layout = "_Layout";
+}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="~/css/profile.css"/>
+</head>
+
+<body>
+<div class="container profile-data">
+    <div class="row">
+        <div class="col data-holder">
+            <div>
+                <input type="file" name="uploadedFile" id="file" /><br>
+                <img src="" id="userPhoto" class="img-thumbnail" style="max-height: 400px; margin: 20px 0; border-radius: 10px"/>
+            </div>
+        </div>
+        <div class="col data-holder">
+            <form method="post" id="profile-edit-form">
+                <p>Дата рождения:</p>
+                <input type="date" class="form-control" name="birthday" id="birthday"/>
+                <p>Город: </p>
+                <input type="text" class="form-control" name="city" placeholder="city" id="city"/>
+                <p>Описание: </p>
+                <textarea class="form-control" name="description" id="description" rows="3"></textarea>
+
+                <p>Пол: </p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="sex" id="exampleRadios1" value="male" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Муж.
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="sex" id="exampleRadios2" value="female">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Жен.
+                        </label>
+                    </div>
+            </form>
+        </div>
+    </div>
+    <div class="row" style="margin: 40px 0">
+        <div class="col">
+            <button type="button" class="btn btn-primary" id="edit-btn">Редактировать</button>
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-danger" id="logout-btn">Выйти из аккаунта</button>
+        </div>
+    </div>
+</div>
+
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/profile.js"></script>
+</body>
+</html>

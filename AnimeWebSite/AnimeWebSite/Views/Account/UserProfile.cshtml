@@ -1,0 +1,43 @@
+@model AnimeWebSite.Models.ProfileModel
+
+@{
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+</head>
+<body>
+<div class="container" style="margin-top: 70px; margin-bottom: 100px">
+    <div class="row">
+        <div class="col">
+            <div class="text-center">
+                <img src="@Model.PhotoPath" id="user-photo-holder" class="img-thumbnail" style="height: 400px;border-radius: 10px"/>
+            </div>
+            <div class="col" style="margin: 30px 0; padding: 20px">
+                <h5>Email: @Model.Email</h5>
+                <h5>Nickname: @Model.Nickname</h5>
+                <h5>Birthday: @Model.Birthday</h5>
+                <h5>City: @Model.City</h5>
+                <h5>Description: @Model.Description</h5 >
+                <div class="row" style="margin-top: 40px">
+                    <div class="col">
+                        <a asp-controller="Account" asp-action="EditProfile" type="button" class="btn btn-primary" id="edit-btn">Редактировать</a>
+                    </div>
+                    <div class="col">
+                        <a asp-controller="Auth" asp-action="Logout" type="button" class="btn btn-primary" id="logout">Выйти из аккаунта</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
